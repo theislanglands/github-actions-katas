@@ -1,10 +1,10 @@
 name: JAVA CI
 on: 
   push:
-    branches
+    branches:
    - main
 pull_request:
-    branches
+    branches:
     - main
 env:
   docker_username: ${{secrets.DOCKER_USERNAME}}
@@ -83,4 +83,4 @@ jobs:
       run: chmod +x ci/performance-test.sh && ci/performance-test.sh.  prut
 #add note
 # add another note
-# edit note2
+# edit note3
